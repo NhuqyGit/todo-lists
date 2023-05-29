@@ -215,16 +215,18 @@ input:checked ~ .cus{
     padding: 0;
 }
 
-.nav-item a{
+.nav-item button{
     cursor: pointer;
     color: var(--color-one);
     text-decoration: none;
     margin: 5px;
     font-weight: 700;
     transition: color ease .5s;
+    background: none;
+    border: none;
 }
 
-.nav-item a:hover, .clearComp:hover, .item-left:hover{
+.nav-item button:hover, .clearComp:hover, .item-left:hover{
     color: var(--todotext-color);
 }
 
@@ -235,6 +237,9 @@ input:checked ~ .cus{
 .clearComp{
     font-weight: 100;
     transition: color ease .5s;
+    border: none;
+    background: none;
+    color: var(--color-one);
 }
 
 .light-theme{
