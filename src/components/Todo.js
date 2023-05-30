@@ -26,8 +26,9 @@ const Todo = (props) => {
 
     const submitHandle = (e) => {
         e.preventDefault();
-        setTodoList((pre)=> [...pre, {id: crypto.randomUUID(), title: title, completed: false}]);
-        setTodo("");
+        if(title !== "")
+            setTodoList((pre)=> [...pre, {id: crypto.randomUUID(), title: title, completed: false}]);
+            setTodo("");
     }
 
     const onChangeHandle = (e) =>{
