@@ -271,6 +271,11 @@ input:checked ~ .cus{
     .todo-list{
         font-size: 16px;
     }
+
+    .cBox-cus:hover{
+        background: none;
+    }
+    
 }
 
 @media (max-width: 435px){
