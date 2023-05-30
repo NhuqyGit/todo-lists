@@ -197,6 +197,7 @@ input:checked ~ .cus{
 
 .info-todoList{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px 15px;
     align-items: center;
@@ -205,6 +206,7 @@ input:checked ~ .cus{
 
 .item-left{
     transition: color ease .5s;
+    margin-left: 5px;
 }
 
 .nav-list{
@@ -224,6 +226,7 @@ input:checked ~ .cus{
     transition: color ease .5s;
     background: none;
     border: none;
+    padding: 0;
 }
 
 .nav-item button:hover, .clearComp:hover, .item-left:hover{
@@ -240,9 +243,27 @@ input:checked ~ .cus{
     border: none;
     background: none;
     color: var(--color-one);
+    padding: 0;
+    margin-left: 5px;
+
 }
 
 .light-theme{
     background: white !important;
     color: var(--text-light) !important;
 }
+
+
+@media (max-width: 1024px) {
+    .todo-form{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px){
+    .info-todoList{
+        padding: 15px 15px;
+    }
+}
+
+/* @media (max-width: ) */
