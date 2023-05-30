@@ -82,7 +82,7 @@ const Todo = (props) => {
 
                             </span>
                         </label>
-                        <span className={_todo.completed === true ? "checked" : ""}>{_todo.title}</span>
+                        <span className={`titleTodo ${_todo.completed === true ? "checked" : ""}`}>{_todo.title}</span>
                     </div>
                     
                     <button onClick={()=>removeHandle(_todo.id)}>

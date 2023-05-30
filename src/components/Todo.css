@@ -95,7 +95,7 @@ main{
     width: 22px;
     height: 22px;
     background: none;
-    transition: background ease 3s;
+    transition: all ease 3s;
 }
 
 .cBox-cus:hover{
@@ -132,6 +132,7 @@ input:checked ~ .cus{
     background: none;
     border: none;
     transition: all ease 1.5s;
+    margin-top: 2px;
 }
 
 .light-text{
@@ -185,8 +186,9 @@ input:checked ~ .cus{
     align-items: center;
 }
 
-.form-cBox span{
+.form-cBox .titleTodo{
     transition: all ease .5s;
+    margin-top: 2px;
     
 }
 
@@ -227,6 +229,7 @@ input:checked ~ .cus{
     background: none;
     border: none;
     padding: 0;
+    font-family: "Josefin Sans",sans-serif;
 }
 
 .nav-item button:hover, .clearComp:hover, .item-left:hover{
@@ -245,6 +248,7 @@ input:checked ~ .cus{
     color: var(--color-one);
     padding: 0;
     margin-left: 5px;
+    font-family: "Josefin Sans",sans-serif;
 
 }
 
@@ -261,9 +265,34 @@ input:checked ~ .cus{
 }
 
 @media (max-width: 768px){
-    .info-todoList{
-        padding: 15px 15px;
+    .todo-form{
+        width: 70%;
+    }
+    .todo-list{
+        font-size: 16px;
     }
 }
 
-/* @media (max-width: ) */
+@media (max-width: 435px){
+    .info-todoList{
+        padding: 15px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .cBox-cus{
+        width: 18px;
+        height: 18px;
+    }
+
+    .cBox-cus span{
+        width: 18px;
+        height: 18px;
+    }
+
+    .tick{
+        width: 22px !important;
+        height: 7px !important;
+    }
+}
